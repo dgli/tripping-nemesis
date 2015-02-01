@@ -14,6 +14,7 @@ SnipContainerWindow::SnipContainerWindow()
 {
 	  // Sets the border width of the window.
 	  set_border_width(10);
+	  set_decorated(false);
 
 	  // When the button receives the "clicked" signal, it will call the
 	  // on_button_clicked() method defined below.
