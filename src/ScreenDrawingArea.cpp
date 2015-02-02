@@ -16,21 +16,6 @@ Glib::RefPtr<Gdk::Pixbuf> getWindowScreenshot(){
 
 ScreenDrawingArea::ScreenDrawingArea()
 {
-//    try
-//    {
-//        // The fractal image has been created by the XaoS program.
-//        // http://xaos.sourceforge.net
-//        m_image = Gdk::Pixbuf::create_from_file("ggggggggg.jpg");
-//    }
-//    catch(const Glib::FileError& ex)
-//    {
-//        std::cerr << "FileError: " << ex.what() << std::endl;
-//    }
-//    catch(const Gdk::PixbufError& ex)
-//    {
-//        std::cerr << "PixbufError: " << ex.what() << std::endl;
-//    }
-
 	m_image = getWindowScreenshot();
 
 
