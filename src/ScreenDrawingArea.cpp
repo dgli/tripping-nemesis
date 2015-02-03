@@ -11,7 +11,7 @@ Glib::RefPtr<Gdk::Pixbuf> getWindowScreenshot(){
 
 	Glib::RefPtr<Gdk::Window> w = Gdk::Window::get_default_root_window();
 
-	return Gdk::Pixbuf::create(w, 0, 0, 500, 500);
+	return Gdk::Pixbuf::create(w, 0, 0, w->get_width(), w->get_height());
 }
 
 ScreenDrawingArea::ScreenDrawingArea()
